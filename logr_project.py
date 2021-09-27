@@ -42,7 +42,7 @@ def assign(refer, val):
                 val = get_key(refer, val)
                 return val
 
-os.chdir('C:/Users/aryan/OneDrive/Desktop/project')
+#use os.chdir('directory') to specify the path of the working directory where csv file is present
 data_original = pd.read_csv('drug.csv')
 data = data_original.copy()
 
@@ -82,7 +82,7 @@ print("The accuracy of the model is : {} %".format(acc*100))
 #===================
 #sns.boxplot('Na_to_K','Drug',data=data_original)
 #sns.boxplot('Age','Drug',data=data_original)
-'''
+
 #==========================================================
 # Creating various lists and dictionaries for user input
 #==========================================================
@@ -140,8 +140,5 @@ try :
     
 except:
     print("PLEASE ENTER VALID INPUT")
-
-'''
-
 
 
